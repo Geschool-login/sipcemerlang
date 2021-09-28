@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, nunito;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.paper {
+  background: transparent;
+}
+
+/* --------------- */
+/* --------------- */
+
+section {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* TOAST */
+.toast {
+    background: #2196F3;
+    border-radius: 12px;
+    height: 40px;
+    width: fit-content;
+}
+
+.toast-body {
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.toast-body button {
+    float: right;
+}
+
+.toast-body .toast-link {
+    font-weight: 500;
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.25s;
+}
+
+.toast-body .toast-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* LOGIN */
+.main-container {
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-switch-btn {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main .main-switch-btn Link {
+    font-weight: 500;
+}
+
+.switch-active {
+    background: #2196F3 !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.switch-btn-login, .switch-btn-register {
+    border: 2px solid #2196F3;
+    height: 25px;
+    transition: background 0.5s, color 0.5s, padding-right 0.5s, padding-left 0.5s;
+    padding: 1px;
+    font-size: 12px;
+}
+
+.switch-btn-login {
+    border-radius: 15px 0 0 15px;
+    color: #2196F3;
+}
+
+.switch-btn-login:hover {
+    color: #fff;
+    background: #2196F3;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.switch-btn-register {
+    border-radius: 0 15px 15px 0;
+    color: #2196F3;
+}
+
+.switch-btn-register:hover {
+    color: #fff;
+    background: #2196F3;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.main-form input[type="email"], input[type="password"], input[type="text"] {
+    height: 40px;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+.rbt input {
+    padding: 0 1rem;
+}
+
+.main-form label {
+    font-weight: bold;
+    font-size: 12px;
+    color: #505254;
+    cursor: pointer;
+    margin-bottom: 0.3rem;
+}
+
+.main-form .form-check label {
+    /* font-weight:normal; */
+    font-size: 12px;
+    color: #505254;
+    cursor: pointer;
+}
+
+.main-form .forgot-password {
+    font-size: 12px;
+    text-align: right;
+    padding: 5px 3px;
+    font-weight: bold;
+}
+
+.main-form button[type="submit"] {
+    background: #2196F3;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    font-weight: 400;
+    transition: font-weight 0.5;
+    transition: background 0.5s;
+    font-size: 14px;
+}
+
+.main-form button[type="submit"]:hover {
+    background: #1685DE;
+    font-weight: 700;
+}
+
+.main-link {
+    font-weight: bold;
+}
+
+.input-password {
+    position: relative;
+}
+
+.input-password .input-group-append {
+    right: 0;
+    position: absolute;
+}
+
+.input-password .input-group-text {
+    border-radius: 0 .25rem .25rem 0;
+    height: 40px;
+    background: transparent;
+    border: transparent;
+}
+
+.logo-title {
+    display: none;
+}
+
+.auth-describe h5 {
+    font-weight: bold;
+}
+
+.auth-describe p {
+    font-size: 13px;
+}
+
+.toggle-password {
+    background: #fff;
+    border-left: none;
+}
+
+.form-title h5 {
+    font-weight:700;
+    margin-bottom: 0;
+}
+
+.form-title p {
+    font-size: 13px;
+}
+
+span[data-testid="not-have-account"] {
+    font-size: 13px;
+    color: #505254;
+}
+
+.link{
+    text-decoration: none;
+    color: #2196F3;
+    transition: color 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.link:hover{
+    color:#1685DE;
+}
+
+.back {
+    font-size: 13px;
+}
+
+
+@media (max-width: 767px) {
+    .main-container {
+        padding: 30px;
+    }
+
+    .switch-btn-login, .switch-btn-register {
+        height: 30px;
+        padding: 4px;
+    }
+
+    .logo-title {
+        display: block;
+        color: #fff;
+    }
+
+    .logo-title .logo img {
+        height: 70px;
+        width: 63px;
+    }
+
+    .logo-title h4 {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .auth-describe {
+        display: none;
+    }
+}
+
+/* OTHER */
+.loading-container {
+    font-size: 13px;
+}
+
+.loading {
+    height: 14px;
+    width: 14px;
+}
+
+.invalid-feedback {
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.show-hide {
+    background: transparent;
+    border: none;
+}
+
+.icon-btn {
+    cursor: pointer;
+}
+
+
+
+
+
+/* FOOTER */
+
+
+
+/* ============== */
+
+

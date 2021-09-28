@@ -1,0 +1,57 @@
+.hero-background {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    filter: blur(2px);
+}
+
+.hero {
+    background: transparent;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .content-container {
+    padding: 100px;
+}
+.hero .content-container .left-side {
+    padding-top: 10vh;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero .logo img {
+    width: 58px;
+    height: 70px;
+}
+
+.hero .left-side .title-container {
+    position: fixed;
+}
+
+.hero .right-side {
+    position: relative;
+    right: 0;
+}
+
+/* @media (max-width: 991px) {
+  .hero .content-container {
+      padding: 155px 50px;
+  }
+} */
+
+@media (max-width: 767px) {
+    .hero .content-container {
+        padding: 20px;
+    }
+
+    .hero .left-side {
+        display: none;
+    }
+}
