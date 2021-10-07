@@ -17,7 +17,7 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import {Link} from 'react-router-dom';
 
-import Footer from './layouts/Footer'
+import Footer from './components/Footer'
 
 function App() {
   const appName = "Register"

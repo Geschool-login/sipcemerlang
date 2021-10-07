@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // Component
 import Hero from '../../components/Hero';
-import Footer from '../../layouts/Footer'
+import Footer from '../../components/Footer'
 import Topography from '../../components/Topography'
 
 // Images
@@ -111,17 +111,17 @@ function Index(props) {
                                 <img src={logo} alt={appName} />
                             </div>
                             <div className="deskripsi col-9 pt-3">
-                                {deskripsi}
-                                <h4>
+                                {/* {deskripsi} */}
+                                <h2>
                                     <b>
                                         {title}
                                     </b>
-                                </h4>
+                                </h2>
                             </div>
                         </div>
                     </div>
 
-                    <div className="main-container mb-4">
+                    <div className="main-container" data-aos={"fade-up"}>
                         
                         <div className="main-switch-btn col-12 col-sm-12 col-xs-12">
                             <Link to="/" className="col-md-6 col-6 btn switch-btn-login">Masuk</Link>
@@ -141,7 +141,7 @@ function Index(props) {
                             <form>
                                 <div className="mb-2">
                                     <label htmlFor="name">Nama</label>
-                                    <input error={error.name} onChange={onChange} type="text" name="name" id="name" placeholder="Masukkan nama lengkap" className="form-control px-3" autoFocus required />
+                                    <input error={error.name} onChange={onChange} type="text" name="name" id="name" placeholder="Masukkan nama lengkap" className="form-control px-3" required />
                                     {
                                         error.name ?
                                             <div className="invalid-feedback d-block">
@@ -209,9 +209,9 @@ function Index(props) {
                             </form>
                         </div>
                     </div>
-                    <Footer appName={appName} />
                 </Hero>
             </div>
+            <Footer appName={appName} />
 
 
 

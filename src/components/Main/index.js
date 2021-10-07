@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component
-import Footer from '../../layouts/Footer'
+import Footer from '../../components/Footer'
 
 // CSS
 import './style.css'

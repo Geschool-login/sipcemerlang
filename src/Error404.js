@@ -6,7 +6,7 @@ import { withRouter } from 'react-router'
 
 const C = (props) =>{
 
-    let title = props.title;
+    // let title = props.title;
     
     return(
 

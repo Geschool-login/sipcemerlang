@@ -10,7 +10,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Loading from './Loading';
 import { Link } from 'react-router-dom';
 
-import Footer from './layouts/Footer'
+import Footer from './components/Footer'
 
 import './index.css';
 
@@ -108,7 +108,7 @@ function App() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   error={error}
-                  helperText={error == 40001 ? 'Email tidak ditemukan' : ''}
+                  helperText={error === 40001 ? 'Email tidak ditemukan' : ''}
                   fullWidth
                 />
                 </div>
@@ -119,7 +119,7 @@ function App() {
                     type="password"
                     value={password}
                     error={error}
-                    helperText={error == 40002 ? <div>Password tidak sesuai. <a href="/forgot">Lupa Password?</a></div> : ''}
+                    helperText={error === 40002 ? <div>Password tidak sesuai. <a href="/forgot">Lupa Password?</a></div> : ''}
                     onChange={(e) => setPassword(e.target.value)}
                     fullWidth
                   />
