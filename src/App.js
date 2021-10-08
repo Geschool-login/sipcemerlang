@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
-import Home from './Home'
 import Login from './view/Login'
 import Register from './view/Register-students'
 import Register2 from './view/Register-teacher'
@@ -39,7 +38,6 @@ function App(props) {
           <Route exact path="/" ><Login /></Route>
           <Route exact path="/forgot" ><Forgot /></Route>
           <Route exact path="/reset" ><Reset /></Route>
-          <Route exact path="/home" ><Home /></Route>
           <Route ><Error404 /></Route>
         </Switch>
 
