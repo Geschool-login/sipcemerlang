@@ -4,11 +4,14 @@ import React from 'react';
 // CSS
 import "./style.css";
 
+// Gambar
+import background from "../../assets/img/bg-jogja-min.jpg"
+
 function Hero(props) {
     
     return (
         <div className="col-12 hero-container">
-            <div style={{ backgroundImage: `linear-gradient(180deg, rgba(33, 150, 243, 0.5) 0%, rgba(33, 150, 243, 0.15) 73.26%), url(${props.background})` }} className="hero-background col-12"></div>
+            <div style={{ backgroundImage: `linear-gradient(180deg, rgba(33, 150, 243, 0.5) 0%, rgba(33, 150, 243, 0.15) 73.26%), url(${background})` }} className="hero-background col-12"></div>
             <div className="col-12 hero">
                 <Grid container className="content-container">
                     <Grid item xs={12} sm={7} md={8} lg={8} className="left-side text-light" data-page={props.appName}>

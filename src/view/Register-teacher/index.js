@@ -7,7 +7,6 @@ import Topography from '../../components/Topography'
 
 // Images
 import logo from '../../assets/img/logo/jogja.png';
-import background from '../../assets/img/bg-jogja.jpg';
 import iconEyeShow from '../../assets/img/icon/Eye_show.svg';
 import iconEyeHide from '../../assets/img/icon/Eye_hide.svg';
 
@@ -145,7 +144,6 @@ function Index(props) {
                     logo={logo}
                     deskripsi={deskripsi}
                     title={title}
-                    background={background}
                 >
 
                     <div className="logo-title mt-5 mb-2">

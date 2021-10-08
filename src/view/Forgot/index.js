@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import jQuery from 'jquery';
 
 // Component
 import Hero from '../../components/Hero';
@@ -8,45 +7,26 @@ import Topography from '../../components/Topography'
 
 // Images
 import logo from '../../assets/img/logo/jogja.png';
-import background from '../../assets/img/bg-jogja.jpg';
 
 
 import { Link } from 'react-router-dom';
 import { ExclamationCircle } from 'react-bootstrap-icons';
 import { ArrowLeftCircle } from 'react-bootstrap-icons';
-import { Check2Circle } from 'react-bootstrap-icons';
 import { Envelope } from 'react-bootstrap-icons';
 
 
 
 function Index(props) {
 
-    // function getCookie(name) {
-    //     var cookieValue = null;
-    //     if (document.cookie && document.cookie !== '') {
-    //         var cookies = document.cookie.split(';');
-    //         for (var i = 0; i < cookies.length; i++) {
-    //             var cookie = jQuery.trim(cookies[i]);
-    //             if (cookie.substring(0, name.length + 1) === (name + '=')) {
-    //                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-    //                 break;
-    //             }
-    //         }
-    //     }
-    //     return cookieValue;
-    // }
 
     const appName = "Forgot"
     const deskripsi = "Selamat datang kembali di"
     const title = "Yogyakarta Blended Learning"
     const [email, setEmail] = useState('');
-    // const [csrf, setCsrf] = useState('');
     const [validationEmail, setValidationEmail] = useState();
     const [loading, setLoading] = useState();
     const [error, setError] = useState();
     const [success, setSuccess] = useState();
-    // const csrftoken = getCookie('csrftoken');
-    // const [csrf, setCsrf] = useState(csrftoken);
 
 
 
@@ -68,12 +48,6 @@ function Index(props) {
         setValidationEmail(false)
         setError(false)
 
-        // setCsrf(csrftoken)
-
-        // let dataEmail = data.email
-        // let dataCsrf = data.csrf
-
-        // let dataCok = { dataEmail, dataCsrf }
 
         console.log(data)
 
@@ -141,7 +115,6 @@ function Index(props) {
                     logo={logo}
                     deskripsi={deskripsi}
                     title={title}
-                    background={background}
                 >
                     <div className="logo-title mt-5">
                         <div className="row mb-5">
