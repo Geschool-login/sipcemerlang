@@ -1,7 +1,7 @@
 
 
 import React, { useEffect } from 'react';
-import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import Home from './Home'
 import Login from './view/Login'
@@ -19,18 +19,6 @@ import {
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import baseColor from '@material-ui/core/colors/blueGrey';
-let theme = createTheme({
-  typography: {
-    useNextVariants: true,
-  },
-  palette: {
-    primary: baseColor,
-  }
-
-
-});
-
 
 function App(props) {
 
@@ -43,7 +31,7 @@ function App(props) {
 
 
   return (
-    <MuiThemeProvider theme={theme}>
+    <MuiThemeProvider>
       <Router >
         <Switch>
           <Route exact path="/register/" component={Register} />
