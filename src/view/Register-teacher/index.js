@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 // Component
 import Hero from '../../components/Hero';
-import Footer from '../../layouts/Footer'
+import Footer from '../../components/Footer'
 import Topography from '../../components/Topography'
 
 // Images
@@ -102,7 +102,7 @@ function Index(props) {
 
     const loadSchools = () => {
 
-        fetch("http://smadiy.geschool.net/_api/main/schools", {
+        fetch("http://yogya.geschool.net/_api/main/schools", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -148,23 +148,23 @@ function Index(props) {
                     background={background}
                 >
 
-                    <div className="logo-title mt-5 mb-5">
+                    <div className="logo-title mt-5 mb-2">
                         <div className="row mb-5">
                             <div className="logo col-3">
                                 <img src={logo} alt={appName} />
                             </div>
                             <div className="deskripsi col-9 pt-3">
-                                {deskripsi}
-                                <h4>
+                                {/* {deskripsi} */}
+                                <h2>
                                     <b>
                                         {title}
                                     </b>
-                                </h4>
+                                </h2>
                             </div>
                         </div>
                     </div>
 
-                <div className="main-container mb-4">
+                    <div className="main-container" data-aos={"fade-up"}>
                     
                     <div className="main-switch-btn col-12 col-sm-12 col-xs-12">
                         <Link to="/" className="col-md-6 col-6 btn switch-btn-login">Masuk</Link>
@@ -174,15 +174,15 @@ function Index(props) {
                         <div className="mb-0">
                             <h5>Daftar sebagai guru</h5>
                         </div>
-                        <div>
-                            <p>Daftar sebagai siswa?&nbsp;<Link className="link" to="/register">Daftar disini</Link></p>
-                        </div>
+                            <div>
+                                <p>Daftar sebagai siswa?&nbsp;<Link className="link" to="/register">Daftar disini</Link></p>
+                            </div>
                     </div>
                     <div className="main-form">
                         <form>
                             <div className="mb-2">
                                 <label htmlFor="name">Nama</label>
-                                <input error={error.name} onChange={onChange} type="text" name="name" id="neme" placeholder="Masukkan nama lengkap" className="form-control px-3" autoFocus required />
+                                <input error={error.name} onChange={onChange} type="text" name="name" id="neme" placeholder="Masukkan nama lengkap" className="form-control px-3" required />
                                 {
                                     error.name ?
                                         <div className="invalid-feedback d-block">
@@ -230,8 +230,8 @@ function Index(props) {
                                         : ''
                                 }
                             </div>
-                            <div>
-                                    <label htmlFor="password_repeat">Ulangi password</label>
+                            <div className="mb-4">
+                                <label htmlFor="password_repeat">Ulangi password</label>
                                 <div className="d-flex input-password">
                                         <input error={error.password_repeat} onChange={onChange} type={rePasswordShown ? "text" : "password"} name="password_repeat" id="password_repeat" placeholder="Masukkan ulang password" className="form-control px-3" required />
                                     <div className="input-group-append form-control-feedback">
@@ -248,7 +248,7 @@ function Index(props) {
                                         : ''
                                 }
                             </div>
-                            <button type="submit" className="mt-5 form-control" onClick={(e) => { e.preventDefault(); doRegister() }}>
+                            <button type="submit" className="form-control mb-2" onClick={(e) => { e.preventDefault(); doRegister() }}>
                                 {
                                     loading ?
                                         <div className="loading-container">
@@ -260,9 +260,10 @@ function Index(props) {
                         </form>
                     </div>
                 </div>
-                <Footer appName={appName} />
                 </Hero>
             </div>
+            <Footer appName={appName} />
+
 
 
 

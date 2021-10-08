@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // Component
 import Hero from '../../components/Hero';
-import Footer from '../../layouts/Footer'
+import Footer from '../../components/Footer'
 import Topography from '../../components/Topography'
 
 // Images
@@ -10,7 +10,6 @@ import logo from '../../assets/img/logo/jogja.png';
 import background from '../../assets/img/bg-jogja.jpg';
 import iconEyeShow from '../../assets/img/icon/Eye_show.svg';
 import iconEyeHide from '../../assets/img/icon/Eye_hide.svg';
-
 
 import { Link } from 'react-router-dom';
 import { ExclamationCircle } from 'react-bootstrap-icons';
@@ -37,8 +36,12 @@ function Index(props) {
         setPasswordShown(passwordShown ? false : true);
     };
 
-    
+    // const [toastShown, setToastShown] = useState();
+    // const toggleToastHide = () => {
+    //     setToastShown(toastShown ? false : true)
+    // }
 
+    
     const doValidation = () => {
         setValidationEmail(false)
         setValidationPassword(false)
@@ -109,19 +112,19 @@ function Index(props) {
         <section>
             <Topography />
             {error ? 
-                <div className="position-fixed top-0 end-0 p-4 p-lg-3" style={{ zIndex: '11' }}>
-                    <div className="toast align-items-center text-white border-0 d-block" role="alert" aria-live="assertive" aria-atomic="true">
+                <div className="position-fixed top-0 end-0 p-4 p-lg-3" style={{ zIndex: '11' }} data-aos={"fade-left"}>
+                    <div className="toast align-items-center text-white border-0 d-block" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true" data-delay="2000">
                         <div className="d-flex">
                             <div className="toast-body">
-                                <ExclamationCircle size="18" />  &nbsp;&nbsp;Email/password salah.&nbsp;&nbsp;
+                                <ExclamationCircle size="18" />  &nbsp;&nbsp;Email atau password salah.&nbsp;&nbsp;
                             </div>
-                            <button onClick={() => setError(false)} type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                            {/* <button onClick={toggleToastHide} type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button> */}
                         </div>
                     </div>
                 </div>
-            : null}
+            : ''}
             
-            <div className="d-flex">
+            <div>
                 <Hero
                     appName={appName}
                     logo={logo}
@@ -129,25 +132,22 @@ function Index(props) {
                     title={title}
                     background={background}
                 >
-                    <div className="logo-title mt-5 mb-5">
+                    <div className="logo-title mt-5 mb-2">
                         <div className="row mb-5">
                             <div className="logo col-3">
                                 <img src={logo} alt={appName} />
                             </div>
                             <div className="deskripsi col-9 pt-3">
-                                {deskripsi}
-                                <h4>
+                                {/* {deskripsi} */}
+                                <h2>
                                     <b>
                                         {title}
                                     </b>
-                                </h4>
+                                </h2>
                             </div>
                         </div>
-
-
                     </div>
-                    <div className="main-container mb-4">
-                        
+                    <div className="main-container" data-page={appName} data-aos={"fade-up"}>
                         <div className="main-switch-btn col-12 col-sm-12 col-xs-12">
                             <Link to="/" className="col-md-6 col-6 btn switch-btn-login switch-active">Masuk</Link>
                             <Link to="/register" className="col-md-6 col-6 btn switch-btn-register">Daftar</Link>
@@ -166,7 +166,7 @@ function Index(props) {
                             <form>
                                 <div className="mb-2">
                                     <label htmlFor="email">Email</label>
-                                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" placeholder="Masukkan email / username" className="form-control px-3" autoFocus required />
+                                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" placeholder="Masukkan email / username" className="form-control px-3" required />
                                     {
                                         validationEmail ?
                                             <div className="invalid-feedback d-block">
@@ -199,9 +199,14 @@ function Index(props) {
                                         <input onChange={handlerSetKeepLogin} type="checkbox" name="keepLogin" id="keepLogin" className="form-check-input" />
                                         <label htmlFor="keepLogin" className="foem-check-login">Ingat saya</label>
                                     </div>
-                                    <div className="col-6 forgot-password">
-                                        <Link className="link" to="/forgot">Lupa password?</Link>
-                                    </div>
+                                    { error ?
+                                        <div className="col-6 forgot-password">
+                                            <Link className="link" to="/forgot">Lupa password?</Link>
+                                        </div>
+                                        :
+                                        ''
+                                    }
+                                    
                                 </div>
                                 
                                 <button type="submit" className="form-control mb-2" onClick={(e) => { e.preventDefault(); doValidation() }}>
@@ -215,17 +220,18 @@ function Index(props) {
                                 </button>
                                 
                                 <div className="col-12 text-center">
-                                    <span data-testid="not-have-account">Belum punya akun? <Link className="link" to="/register">Daftar</Link></span>
+                                    <span data-testid="not-have-account">Belum punya akun? <Link className="link" to="/register">Daftar disini</Link></span>
                                 </div>
                             </form>
                         </div>
+                        
                     </div>
-                    <Footer appName={appName} />
+
                 </Hero>
-                
-                
+
             </div>
-            
+            <Footer appName={appName} />
+
             
            
         </section>
