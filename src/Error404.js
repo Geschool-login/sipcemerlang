@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { withRouter } from 'react-router'
 
+import img from './assets/img/404.svg'
 
 
 const C = (props) =>{
@@ -10,9 +10,11 @@ const C = (props) =>{
     
     return(
 
-    <div style={{textAlign: 'center', paddingTop: 50}} >
+    <div className="error-notfound" style={{textAlign: 'center', paddingTop: 50}} >
 
-        <h1 style={{fontSize: '96pt'}}>404</h1>
+        {/* <h1 style={{fontSize: '96pt'}}>404</h1> */}
+
+        <img className="error-img" src={img} alt="404" />
         
         <h3>Halaman tidak dapat di temukan.</h3>
 

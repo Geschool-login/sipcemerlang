@@ -4,11 +4,11 @@ import React, { useEffect } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import Login from './view/Login'
-import Register from './view/Register-students'
-import Register2 from './view/Register-teacher'
+import Register from './view/RegisterStudent'
+import Register2 from './view/RegisterTeacher'
 import Forgot from './view/Forgot'
 import Reset from './view/Reset'
-import Error404 from './Error404'
+import Error404 from './view/Error404'
 import {
   BrowserRouter as Router,
   Switch,

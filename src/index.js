@@ -9,6 +9,7 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Custom Css
+// import './index.css'
 import './assets/css/style.css'
 
 
