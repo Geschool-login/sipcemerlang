@@ -32,7 +32,7 @@ function Hero(props) {
 
                             <div className="slogan">
                                 <p>
-                                    Yogyakarta kota pelajar berhati nyaman, membuat para pengais ilmu semangat untuk menggapai kesuksesan. Perjalanan berjuta mil menuju kesuksesan dimulai dengan satu langkah dari kota Yogyakarta.
+                                    {props.slogan}
                                 </p>
                             </div>
                             
@@ -43,7 +43,7 @@ function Hero(props) {
                     </Grid>
                     <Grid item xs={12} sm={5} md={4} lg={4} className="right-side" data-page={props.appName}>
                         <div className="logo-title mt-5 mb-2">
-                            <div className="row mb-5">
+                            <div className="d-flex mb-5">
                                 <div className="logo col-3">
                                     <img src={props.logo} alt={props.appName} />
                                 </div>

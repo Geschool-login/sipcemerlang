@@ -46,8 +46,6 @@ function Index(props) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
-
-
         })
             .then(res => {
 
@@ -55,9 +53,6 @@ function Index(props) {
             }
             ).then(
                 (result) => {
-
-
-
                     if (result.success) {
                         window.location.href = result.redirect_uri;
                         return;
@@ -65,7 +60,6 @@ function Index(props) {
 
                     if (result.error) {
                         setError(result.error);
-
                     }
                     setLoading(false);
                 }
@@ -74,15 +68,15 @@ function Index(props) {
 
                 setError(true)
                 setLoading(false);
-            }
-            )
+            })
 
     }
 
     const loadSchools = () => {
 
-        fetch("http://yogya.geschool.net/_api/main/schools", {
+        fetch("http://sipcemerlang.net/_api/main/schools", {
             method: 'GET',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -94,20 +88,11 @@ function Index(props) {
             }
             ).then(
                 (result) => {
-
                     setSchools(result.items);
-
-
                 }
             )
             .catch(error => {
-
-
-            }
-            )
-
-
-
+            })
     }
 
     useEffect(() => {

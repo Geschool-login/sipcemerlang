@@ -285,13 +285,18 @@ span[data-testid="not-have-account"] {
     }
 
     .logo-title {
-        display: block;
+        display: flex;
         color: #fff;
+        justify-content: center;
     }
 
     .logo-title .logo img {
         height: 70px;
         width: 63px;
+    }
+
+    .logo-title .deskripsi {
+        margin-left: 20px;
     }
 
     .logo-title h4 {

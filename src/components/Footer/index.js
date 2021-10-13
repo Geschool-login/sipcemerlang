@@ -12,23 +12,23 @@ function Index( props ) {
                 <Grid item xs={12} sm={12} md={12} lg={12} className="text-light">
                     <ul className="list-inline d-flex footer-list">
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://sway.office.com/QSg4ukKu1Iy7Gy6U" className="footer-link bold">Road Map to Geschool</a>
+                            <a target="_blank" rel="noreferrer" href="https://s.id/geschool" className="footer-link bold">Road Map to Geschool</a>
                         </li>
                     </ul>
                     <ul className="list-inline d-flex footer-list link-list">
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://jogjakota.go.id/" className="footer-link">Dinas Kota Yogyakarta</a>
+                            <a target="_blank" rel="noreferrer" href="http://disdikbud.magelangkota.go.id/" className="footer-link">Dinas Pendidikan Magelang</a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="http://yogyakarta.siap.web.id/" className="footer-link">Dinas Pendidikan Yogyakarta</a>
+                            <a target="_blank" rel="noreferrer" href="https://www.magelangkab.go.id/" className="footer-link">Pemda Magelang</a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://dikpora.jogjaprov.go.id/" className="footer-link">Dikpora Yogyakarta</a>
+                            <a target="_blank" rel="noreferrer" href="http://disdikbud.magelangkab .go.id/" className="footer-link">Dikpora Magelang</a>
                         </li>
                     </ul>
                 </Grid>
                 <Grid item sm={12} md={12} lg={12} className="copyright mt-2">
-                    &copy; 2021 Yogyakarta Blended Learning - Didukung oleh geschool
+                    &copy; {props.copyright}
                 </Grid>
             </Grid>
         </footer>

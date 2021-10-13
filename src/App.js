@@ -1,7 +1,7 @@
 
 
 import React, { useEffect } from 'react';
-import { MuiThemeProvider } from '@material-ui/core/styles';
+// import { MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import Login from './view/Login'
 import Register from './view/RegisterStudent'
@@ -30,7 +30,7 @@ function App(props) {
 
 
   return (
-    <MuiThemeProvider>
+    // <MuiThemeProvider>
       <Router >
         <Switch>
           <Route exact path="/register/" component={Register} />
@@ -42,7 +42,7 @@ function App(props) {
         </Switch>
 
       </Router>
-    </MuiThemeProvider>
+    // </MuiThemeProvider>
   );
 }
 
