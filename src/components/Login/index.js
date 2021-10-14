@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExclamationCircle } from 'react-bootstrap-icons';
-import iconEyeShow from '../../assets/img/icon/Eye_show.svg';
-import iconEyeHide from '../../assets/img/icon/Eye_hide.svg';
 
 import Toast from '../Toast';
 
@@ -133,7 +131,7 @@ function Login(props) {
                                 <input value={password} onChange={(e) => setPassword(e.target.value)} type={passwordShown ? "text" : "password"} name="password" id="password" placeholder="Masukkan password" className="form-control px-3" required />
                                 <div className="input-group-append form-control-feedback">
                                     <div className="input-group-text toggle-password">
-                                        <img onClick={togglePasswordVisiblity} className="icon-btn" alt="eye" src={passwordShown ? iconEyeHide : iconEyeShow} style={{ width: '25px', height: '25px' }} />
+                                    <img onClick={togglePasswordVisiblity} className="icon-btn" alt="eye" src={passwordShown ? "https://fluenticons.co/regular_icons/eye_hide.svg" : "https://fluenticons.co/regular_icons/eye_show.svg"} style={{ width: '25px', height: '25px' }} />
                                     </div>
                                 </div>
                             </div>

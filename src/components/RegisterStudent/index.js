@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { ExclamationCircle } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
-import iconEyeShow from '../../assets/img/icon/Eye_show.svg';
-import iconEyeHide from '../../assets/img/icon/Eye_hide.svg';
 
 function Index(props) {
 
@@ -124,7 +122,7 @@ function Index(props) {
                                 <input error={error.password} onChange={onChange} type={passwordShown ? "text" : "password"} name="password" id="password" placeholder="Masukkan password" className="form-control px-3" required />
                                 <div className="input-group-append form-control-feedback">
                                     <div className="input-group-text toggle-password">
-                                        <img onClick={togglePasswordVisiblity} className="icon-btn" alt="eye" src={passwordShown ? iconEyeHide : iconEyeShow} style={{ width: '25px', height: '25px' }} />
+                                    <img onClick={togglePasswordVisiblity} className="icon-btn" alt="eye" src={passwordShown ? "https://fluenticons.co/regular_icons/eye_hide.svg" : "https://fluenticons.co/regular_icons/eye_show.svg"} style={{ width: '25px', height: '25px' }} />
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +140,7 @@ function Index(props) {
                                 <input error={error.password_repeat} onChange={onChange} type={rePasswordShown ? "text" : "password"} name="password_repeat" id="password_repeat" placeholder="Masukkan ulang password" className="form-control px-3" required />
                                 <div className="input-group-append form-control-feedback">
                                     <div className="input-group-text toggle-password">
-                                        <img onClick={toggleRePasswordVisiblity} className="icon-btn" alt="eye" src={rePasswordShown ? iconEyeHide : iconEyeShow} style={{ width: '25px', height: '25px' }} />
+                                    <img onClick={toggleRePasswordVisiblity} className="icon-btn" alt="eye" src={rePasswordShown ? "https://fluenticons.co/regular_icons/eye_hide.svg" : "https://fluenticons.co/regular_icons/eye_show.svg"} style={{ width: '25px', height: '25px' }} />
                                     </div>
                                 </div>
                             </div>
