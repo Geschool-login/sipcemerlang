@@ -20,12 +20,6 @@ function Login(props) {
         setPasswordShown(passwordShown ? false : true);
     };
 
-    // const [toastShown, setToastShown] = useState();
-    // const toggleToastHide = () => {
-    //     setToastShown(toastShown ? false : true)
-    // }
-
-
     const doValidation = () => {
         setValidationEmail(false)
         setValidationPassword(false)

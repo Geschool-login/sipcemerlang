@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
-    "@material-ui/lab": "^4.0.0-alpha.58",
-    "@material-ui/styles": "^4.11.4",
     "@popperjs/core": "^2.10.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -13,7 +10,6 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.1.1",
     "http-proxy-middleware": "^0.19.1",
-    "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-bootstrap-icons": "^1.5.0",
     "react-bootstrap-typeahead": "^5.2.0",

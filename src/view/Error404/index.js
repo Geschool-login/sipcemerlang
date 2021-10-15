@@ -1,18 +1,16 @@
 import React from 'react';
 import { withRouter } from 'react-router'
 
-import img from '../../assets/img/404.svg'
+import img from '../../assets/img/404.png'
 
 
 const C = (props) => {
 
-    // let title = props.title;
 
     return (
 
         <div className="error-notfound" style={{ textAlign: 'center', paddingTop: 50 }} >
 
-            {/* <h1 style={{fontSize: '96pt'}}>404</h1> */}
 
             <img className="404-img" src={img} alt="404" />
 
