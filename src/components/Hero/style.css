@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
-    /* filter: blur(1px); */
+    filter: blur(1px);
 }
 
 .hero {
@@ -17,6 +17,7 @@
 }
 
 .hero .content-container {
+    display: flex;
     padding: 15vh 10vh;
     min-height: 100vh;
 }
@@ -117,6 +118,7 @@
 
 @media (max-width: 767px) {
     .hero .content-container {
+        display:block;
         padding: 20px;
     }
 
