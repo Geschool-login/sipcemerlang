@@ -18,7 +18,7 @@ function Index( props ) {
                             <a target="_blank" rel="noreferrer" href="http://disdikbud.magelangkota.go.id/" className="footer-link">Dinas Pendidikan Magelang</a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://www.magelangkab.go.id/" className="footer-link">Pemda Magelang</a>
+                            <a target="_blank" rel="noreferrer" href="https://www.magelangkota.go.id/" className="footer-link">Pemda Magelang</a>
                         </li>
                         <li>
                             <a target="_blank" rel="noreferrer" href="http://disdikbud.magelangkab.go.id/" className="footer-link">Dikpora Magelang</a>
