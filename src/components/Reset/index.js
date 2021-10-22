@@ -106,16 +106,13 @@ function Reset(props) {
                     }
                     if (result.error) {
                         setError(404);
-                        console.log(error);
                     }
                     setLoading(false)
-                    console.log(error);
                 }
             )
             .catch(error => {
                 setError(true)
                 setLoading(false)
-                console.log(error);
             })
     }
 

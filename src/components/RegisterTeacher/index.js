@@ -23,6 +23,21 @@ function Index(props) {
         setRePasswordShown(rePasswordShown ? false : true);
     };
 
+    const handleSetChange = (v, e) => {
+        let dataSchool;
+
+        if (v.length !== 0) {
+            dataSchool = v[0].id
+        } else {
+            dataSchool = ''
+        }
+
+        let d = { ...data };
+        d['school'] = dataSchool
+
+        setData(d);
+    }
+
     const onChange = (e) => {
         let d = { ...data };
 
@@ -88,6 +103,7 @@ function Index(props) {
             })
     }
 
+
     useEffect(() => {
         loadSchools();
     }, [])
@@ -134,11 +150,12 @@ function Index(props) {
                     <div className="mb-2">
                         <label htmlFor="schools">Sekolah</label>
                         <Typeahead
-                            id="schools"
-                            labelKey={(option) => option.name}
-                            onChange={schools.id}
+                            id="school"
                             options={schools}
+                            labelKey={(option) => option.name}
+                            onChange={handleSetChange}
                             placeholder="Pilih sekolah"
+                            name="school"
                         />
                     </div>
                     <div className="mb-2">
