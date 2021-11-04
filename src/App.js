@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react';
 import './App.css';
 import Login from './view/Login'
@@ -17,7 +15,6 @@ import {
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-
 function App(props) {
 
   useEffect(() => {
@@ -25,8 +22,6 @@ function App(props) {
       duration: 1500
     });
   }, []);
-
-
 
   return (
       <Router >

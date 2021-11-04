@@ -12,9 +12,9 @@ import logo from '../../assets/img/logo/logo.png'; //Logo
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "SIP Cemerlang"
-    const slogan = "Pupuklah selalu kepercayaan diri yang ada dalam dirimu. Karena sebenarnya kamu benar-benar mampu dan tidak ada seorangpun yang membatasimu untuk mecari ilmu."
-    const copyright = "2021 SIP Cemerlang - Didukung oleh geschool"
+    const title = "Madrasah Sumbar Blended Learning"
+    const slogan = "Pendidikan merupakan investasi masa depan, bersiaplah menghadapi ujian demi masa depan yang cerah."
+    const copyright = "2021 Madrasah Sumatera Barat Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>

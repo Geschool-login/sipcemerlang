@@ -7,7 +7,7 @@ function Hero(props) {
     
     return (
         <div className="col-12 hero-container">
-            <div style={{ backgroundImage: `linear-gradient(180deg, rgba(33, 150, 243, 0.5) 0%, rgba(33, 150, 243, 0.15) 73.26%), url(${props.background})` }} className="hero-background col-12"></div>
+            <div style={{ backgroundImage: `linear-gradient(171.31deg, rgba(0, 0, 0, 0.63) 81.78%, rgba(255, 255, 255, 0) 95.16%), url(${props.background})` }} className="hero-background col-12"></div>
             <div className="col-12 hero">
                 <div className="content-container">
                     <div className="col-xs-12 col-sm-7 col-md-6 col-lg-8 left-side text-light" data-page={props.appName}>
@@ -49,7 +49,7 @@ function Hero(props) {
                                 <div className="deskripsi col-9 pt-3">
                                     <h2>
                                         <b>
-                                            {props.title}
+                                            Madrasah Sumbar <br /> Blended Learning
                                         </b>
                                     </h2>
                                 </div>

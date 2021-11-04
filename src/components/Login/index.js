@@ -78,8 +78,6 @@ function Login(props) {
 
                     setLoading(false)
 
-
-
                 }
             )
             .catch(error => {
