@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Login from './view/Login'
-import Register from './view/RegisterStudent'
-import Register2 from './view/RegisterTeacher'
 import Forgot from './view/Forgot'
 import Reset from './view/Reset'
 import Error404 from './view/Error404'
@@ -26,8 +24,6 @@ function App(props) {
   return (
       <Router >
         <Switch>
-          <Route exact path="/register/" component={Register} />
-          <Route exact path="/register/teacher/" component={Register2} />
           <Route exact path="/" ><Login /></Route>
           <Route exact path="/forgot" ><Forgot /></Route>
           <Route exact path="/reset" ><Reset /></Route>

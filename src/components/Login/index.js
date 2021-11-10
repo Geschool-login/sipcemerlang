@@ -90,13 +90,10 @@ function Login(props) {
     return (
             
             <div className="main-container" data-page={props.appName} data-aos={"fade-up"}>
-            {error ?
+            {/* {error ?
                 <Toast />
-                : ''}
-                <div className="main-switch-btn col-12 col-sm-12 col-xs-12">
-                    <Link to="/" className="col-md-6 col-6 btn switch-btn-login switch-active">Masuk</Link>
-                    <Link to="/register" className="col-md-6 col-6 btn switch-btn-register">Daftar</Link>
-                </div>
+                : ''
+            } */}
 
                 <div className="form-title mb-3">
                     <div className="mb-0">
@@ -107,11 +104,13 @@ function Login(props) {
                     </div>
                 </div>
 
+                {/* <div className="alert alert-danger" style={{ padding: '10px 10px', fontSize: '13px' }}><ExclamationCircle /> &nbsp;Email atau password salah!</div> */}
+
                 <div className="main-form">
                     <form>
                         <div className="mb-2">
                             <label htmlFor="email">Email</label>
-                            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" placeholder="Masukkan email / username" className="form-control px-3" required />
+                            <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="email" id="email" placeholder="Masukkan email / username" className={ error === 40001 ? "form-control px-3 is-invalid" : "form-control px-3" }  required />
                             {
                                 validationEmail ?
                                     <div className="invalid-feedback d-block">
@@ -119,11 +118,18 @@ function Login(props) {
                                     </div>
                                     : null
                             }
+                            {
+                                error === 40001 ?
+                                    <div className="invalid-feedback d-block">
+                                        <ExclamationCircle size='14' /> Email tidak ditemukan
+                                    </div>
+                                    : null
+                            }
                         </div>
                         <div className="mb-3">
                             <label htmlFor="password">Password</label>
                             <div className="d-flex input-password">
-                                <input value={password} onChange={(e) => setPassword(e.target.value)} type={passwordShown ? "text" : "password"} name="password" id="password" placeholder="Masukkan password" className="form-control px-3" required />
+                            <input value={password} onChange={(e) => setPassword(e.target.value)} type={passwordShown ? "text" : "password"} name="password" id="password" placeholder="Masukkan password" className={ error === 40002 ? "form-control px-3 is-invalid" : "form-control px-3"} required />
                                 <div className="input-group-append form-control-feedback">
                                     <div className="input-group-text toggle-password">
                                     <img onClick={togglePasswordVisiblity} className="icon-btn" alt="eye" src={passwordShown ? eye_hide : eye_show} style={{ width: '25px', height: '25px' }} />
@@ -134,6 +140,13 @@ function Login(props) {
                                 validationPassword ?
                                     <div className="invalid-feedback d-block">
                                         <ExclamationCircle /> Password tidak boleh kosong
+                                    </div>
+                                    : null
+                            }
+                            {
+                                error === 40002 ?
+                                    <div className="invalid-feedback d-block">
+                                        <ExclamationCircle size='14' /> Password tidak sesuai
                                     </div>
                                     : null
                             }
@@ -165,7 +178,8 @@ function Login(props) {
                         </button>
 
                         <div className="col-12 text-center">
-                            <span data-testid="not-have-account">Belum punya akun? <Link className="link" to="/register">Daftar disini</Link></span>
+                            <span data-testid="not-have-account">Belum punya akun?</span> <br />
+                            <span data-testid="not-have-account">Silahkan hubungi sekolah</span>
                         </div>
                     </form>
                 </div>

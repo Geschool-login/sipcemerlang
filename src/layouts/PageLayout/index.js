@@ -12,9 +12,9 @@ import logo from '../../assets/img/logo/logo.png'; //Logo
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "Madrasah Sumbar Blended Learning"
-    const slogan = "Pendidikan merupakan investasi masa depan, bersiaplah menghadapi ujian demi masa depan yang cerah."
-    const copyright = "2021 Madrasah Sumatera Barat Blended Learning - Didukung oleh Geschool"
+    const title = "Sleman Sembada Blended Learning"
+    const slogan = "Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan Indonesia tak mungkin bertahan."
+    const copyright = "2021 Sleman Sembada Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>

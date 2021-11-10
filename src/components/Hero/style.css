@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
-    filter: blur(2px);
+    /* filter: blur(2px); */
 }
 
 .hero {
@@ -22,7 +22,7 @@
     min-height: 100vh;
 }
 .hero .content-container .left-side {
-    height: 470px;
+    height: 435px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -35,8 +35,8 @@
 }
 
 .hero .logo img {
-    width: 80px;
-    min-height: 80px;
+    width: 85px;
+    height: 95px;
 }
 
 .hero h5 {
@@ -56,11 +56,11 @@
 }
 
 .hero .right-side[data-page="Login"] {
-    min-height: 470px;
+    min-height: 435px;
 }
 
 .hero .right-side[data-page="Forgot"] {
-    height: 470px;
+    height: 435px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -140,6 +140,10 @@
 
     .slogan {
         text-align: justify;
+    }
+
+    .deskripsi {
+        width: 70%;
     }
 
     

@@ -42,14 +42,14 @@ function Hero(props) {
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 right-side" data-page={props.appName}>
                         <div className="logo-title mt-5 mb-2">
-                            <div className="d-flex mb-5">
-                                <div className="logo col-3">
+                            <div className="d-flex justify-content-center mb-5">
+                                <div className="logo d-flex justify-content-center col-3">
                                     <img src={props.logo} alt={props.appName} />
                                 </div>
-                                <div className="deskripsi col-9 pt-3">
+                                <div className="d-flex align-items-center deskripsi">
                                     <h2>
                                         <b>
-                                            Madrasah Sumbar <br /> Blended Learning
+                                            Sleman Sembada <br /> Blended Learning
                                         </b>
                                     </h2>
                                 </div>

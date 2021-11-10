@@ -1,11 +1,13 @@
 import React from 'react';
 import { ExclamationCircle } from 'react-bootstrap-icons';
 
+import './style.css';
+
 function index(props) {
     return (
-        <div className="position-fixed top-0 end-0 p-4 p-lg-3" style={{ zIndex: '11' }} data-aos={"fade-left"}>
+        <div className="d-flex justify-content-end position-fixed top-0 my-4 toast-container" style={{ zIndex: '11' }} data-aos={"fade-down"}>
             <div className="toast align-items-center text-white border-0 d-block" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true" data-delay="2000">
-                <div className="d-flex">
+                <div className="d-flex justify-content-center">
                     <div className="toast-body">
                         <ExclamationCircle size="18" />  &nbsp;&nbsp;Email atau password salah.&nbsp;&nbsp;
                     </div>

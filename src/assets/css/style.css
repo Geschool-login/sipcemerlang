@@ -52,10 +52,10 @@ section {
 
 /* TOAST */
 .toast {
-    background: #4caf50;
+    background: #2196F3;
     border-radius: 12px;
     height: 40px;
-    width: fit-content;
+    width: 33.33333333%;
 }
 
 .toast-body {
@@ -106,13 +106,13 @@ section {
 }
 
 .switch-active {
-    background: #4caf50 !important;
+    background: #2196F3 !important;
     color: white !important;
     font-weight: 700 !important;
 }
 
 .switch-btn-login, .switch-btn-register {
-    border: 2px solid #4caf50;
+    border: 2px solid #2196F3;
     height: 25px;
     transition: background 0.5s, color 0.5s, padding-right 0.5s, padding-left 0.5s;
     padding: 1px;
@@ -121,24 +121,24 @@ section {
 
 .switch-btn-login {
     border-radius: 15px 0 0 15px;
-    color: #4caf50;
+    color: #2196F3;
 }
 
 .switch-btn-login:hover {
     color: #fff;
-    background: #4caf50;
+    background: #2196F3;
     font-weight: bold;
     padding-left: 10px;
 }
 
 .switch-btn-register {
     border-radius: 0 15px 15px 0;
-    color: #4caf50;
+    color: #2196F3;
 }
 
 .switch-btn-register:hover {
     color: #fff;
-    background: #4caf50;
+    background: #2196F3;
     font-weight: bold;
     padding-right: 10px;
 }
@@ -146,7 +146,6 @@ section {
 .main-form input[type="email"], input[type="password"], input[type="text"] {
     height: 40px;
     font-size: 12px;
-    border-radius: 30px;
 }
 
 .rbt input {
@@ -175,19 +174,18 @@ section {
 }
 
 .main-form button[type="submit"] {
-    background: #4caf50;
+    background: #2196F3;
     color: white;
     border-radius: 30px;
     height: 40px;
-    font-weight: 400;
+    font-weight: 700;
     transition: font-weight 0.5;
     transition: background 0.5s;
     font-size: 14px;
 }
 
 .main-form button[type="submit"]:hover {
-    background: #3a8f3c;
-    font-weight: 700;
+    background: #187dcf;
 }
 
 .main-link {
@@ -208,6 +206,11 @@ section {
     height: 40px;
     background: transparent;
     border: transparent;
+}
+
+.form-check-input:checked {
+    background-color: #2196F3;
+    border-color: #2196F3;
 }
 
 .logo-title {
@@ -244,13 +247,13 @@ span[data-testid="not-have-account"] {
 
 .link{
     text-decoration: none;
-    color: #4caf50;
+    color: #2196F3;
     transition: color 0.5s ease-in-out;
     font-weight: bold;
 }
 
 .link:hover{
-    color:#3a8f3c;
+    color:#187dcf;
 }
 
 .back {
@@ -268,7 +271,7 @@ span[data-testid="not-have-account"] {
 }
 
 .error-notfound button:hover {
-    background-color: #3a8f3c;
+    background-color: #187dcf;
     color: #fff;
 }
 
@@ -291,7 +294,8 @@ span[data-testid="not-have-account"] {
     }
 
     .logo-title .logo img {
-        width: 80px;
+        width: 75px;
+        height: 85px;
     }
 
     .logo-title .deskripsi {
@@ -334,6 +338,9 @@ span[data-testid="not-have-account"] {
     cursor: pointer;
 }
 
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+}
 
 
 
