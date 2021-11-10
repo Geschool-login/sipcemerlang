@@ -5,8 +5,6 @@ import { ExclamationCircle } from 'react-bootstrap-icons';
 import eye_show from '../../assets/img/icon/eye_show.png';
 import eye_hide from '../../assets/img/icon/eye_hide.png';
 
-import Toast from '../Toast';
-
 function Login(props) {
     const [keepLogin, setKeepLogin] = useState(false);
     const [email, setEmail] = useState('');
@@ -90,10 +88,6 @@ function Login(props) {
     return (
             
             <div className="main-container" data-page={props.appName} data-aos={"fade-up"}>
-            {/* {error ?
-                <Toast />
-                : ''
-            } */}
 
                 <div className="form-title mb-3">
                     <div className="mb-0">
@@ -103,8 +97,6 @@ function Login(props) {
                         <p>Silahkan masuk menggunakan akun kamu</p>
                     </div>
                 </div>
-
-                {/* <div className="alert alert-danger" style={{ padding: '10px 10px', fontSize: '13px' }}><ExclamationCircle /> &nbsp;Email atau password salah!</div> */}
 
                 <div className="main-form">
                     <form>
@@ -157,7 +149,7 @@ function Login(props) {
                                 <input onChange={handlerSetKeepLogin} type="checkbox" name="keepLogin" id="keepLogin" className="form-check-input" />
                                 <label htmlFor="keepLogin" className="foem-check-login">Ingat saya</label>
                             </div>
-                            {error ?
+                            { error ?
                                 <div className="col-6 forgot-password">
                                     <Link className="link" to="/forgot">Lupa password?</Link>
                                 </div>

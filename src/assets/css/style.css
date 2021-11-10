@@ -50,35 +50,6 @@ section {
     min-height: 100vh;
 }
 
-/* TOAST */
-.toast {
-    background: #2196F3;
-    border-radius: 12px;
-    height: 40px;
-    width: 33.33333333%;
-}
-
-.toast-body {
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-.toast-body button {
-    float: right;
-}
-
-.toast-body .toast-link {
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-    transition: color 0.25s;
-}
-
-.toast-body .toast-link:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
 /* LOGIN */
 .main-container {
     padding: 30px 40px;

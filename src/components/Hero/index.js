@@ -26,19 +26,13 @@ function Hero(props) {
                                         {props.title}
                                     </h1>
                                 </div>
-                                
                             </div>
-
                             <div className="slogan">
                                 <p>
                                     {props.slogan}
                                 </p>
                             </div>
-                            
                         </div>
-                        
-                        
-                        
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 right-side" data-page={props.appName}>
                         <div className="logo-title mt-5 mb-2">
