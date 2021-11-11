@@ -6,15 +6,15 @@ import Footer from "../../components/Footer"
 
 // EDITABLE
 import background from "../../assets/img/background.jpg" //Background
-import logo from '../../assets/img/logo/logo.png'; //Logo
+import logo from '../../assets/img/logo.png'; //Logo
 
 
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "Sleman Sembada Blended Learning"
-    const slogan = "Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan Indonesia tak mungkin bertahan."
-    const copyright = "2021 Sleman Sembada Blended Learning - Didukung oleh Geschool"
+    const title = "Bantul Projotamansari Blended Learning"
+    const slogan = "Tujuan utama pendidikan bukanlah pengetahuan, tetapi tindakan."
+    const copyright = "2021 Bantul Projotamansari Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>

@@ -11,5 +11,6 @@
 @media (max-width: 767px) {
     .topography {
         background: url(../../assets/img/Topography-m.png);
+        background-size: cover;
     }
 }
