@@ -43,7 +43,7 @@ function Hero(props) {
                                 <div className="d-flex align-items-center deskripsi">
                                     <h4>
                                         <b>
-                                            Bantul Projotamansari <br /> Blended Learning
+                                            Kulon Progo Binangun <br /> Blended Learning
                                         </b>
                                     </h4>
                                 </div>

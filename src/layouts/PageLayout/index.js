@@ -12,9 +12,9 @@ import logo from '../../assets/img/logo.png'; //Logo
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "Bantul Projotamansari Blended Learning"
-    const slogan = "Tujuan utama pendidikan bukanlah pengetahuan, tetapi tindakan."
-    const copyright = "2021 Bantul Projotamansari Blended Learning - Didukung oleh Geschool"
+    const title = "Kulon Progo Binangun Blended Learning"
+    const slogan = "Belajar daring di rumah seharusnya tidak menjadi kesempatan untuk kamu bisa bermalas-malasan. Ingat, saat kamu malas, ada banyak orang yang terus berjuang menyusulmu."
+    const copyright = "2021 Kulon Progo Binangun Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>
