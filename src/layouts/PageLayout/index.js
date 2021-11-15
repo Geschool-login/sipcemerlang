@@ -12,9 +12,9 @@ import logo from '../../assets/img/logo.png'; //Logo
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "MTs DIY Blended Learning"
-    const slogan = "Barangsiapa belum merasakan pahitnya belajar walau sebentar, maka akan merasakan hinanya kebodohan sepanjang hidupnya."
-    const copyright = "2021 MTs DIY Blended Learning - Didukung oleh Geschool"
+    const title = "Madrasah Sumbar Blended Learning"
+    const slogan = "Pendidikan merupakan investasi masa depan, bersiaplah menghadapi ujian demi masa depan yang cerah."
+    const copyright = "2021 Madrasah Sumatera Barat Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>
