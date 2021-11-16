@@ -77,13 +77,13 @@ section {
 }
 
 .switch-active {
-    background: #4CAF50 !important;
+    background: #607d8b !important;
     color: white !important;
     font-weight: 700 !important;
 }
 
 .switch-btn-login, .switch-btn-register {
-    border: 2px solid #4CAF50;
+    border: 2px solid #607d8b;
     height: 25px;
     transition: background 0.5s, color 0.5s, padding-right 0.5s, padding-left 0.5s;
     padding: 1px;
@@ -92,24 +92,24 @@ section {
 
 .switch-btn-login {
     border-radius: 15px 0 0 15px;
-    color: #4CAF50;
+    color: #607d8b;
 }
 
 .switch-btn-login:hover {
     color: #fff;
-    background: #4CAF50;
+    background: #455A64;
     font-weight: bold;
     padding-left: 10px;
 }
 
 .switch-btn-register {
     border-radius: 0 15px 15px 0;
-    color: #4CAF50;
+    color: #607d8b;
 }
 
 .switch-btn-register:hover {
     color: #fff;
-    background: #4CAF50;
+    background: #455A64;
     font-weight: bold;
     padding-right: 10px;
 }
@@ -145,7 +145,7 @@ section {
 }
 
 .main-form button[type="submit"] {
-    background: #4CAF50;
+    background: #607d8b;
     color: white;
     border-radius: 30px;
     height: 40px;
@@ -156,7 +156,7 @@ section {
 }
 
 .main-form button[type="submit"]:hover {
-    background: #388E3C;
+    background: #455A64;
 }
 
 .main-link {
@@ -180,8 +180,8 @@ section {
 }
 
 .form-check-input:checked {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+    background-color: #607d8b;
+    border-color: #607d8b;
 }
 
 .logo-title {
@@ -218,13 +218,13 @@ span[data-testid="not-have-account"] {
 
 .link{
     text-decoration: none;
-    color: #4CAF50;
+    color: #607d8b;
     transition: color 0.5s ease-in-out;
     font-weight: bold;
 }
 
 .link:hover{
-    color:#388E3C;
+    color:#455A64;
 }
 
 .back {
@@ -242,7 +242,7 @@ span[data-testid="not-have-account"] {
 }
 
 .error-notfound button:hover {
-    background-color: #388E3C;
+    background-color: #455A64;
     color: #fff;
 }
 
@@ -265,8 +265,8 @@ span[data-testid="not-have-account"] {
     }
 
     .logo-title .logo img {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 
     .logo-title .deskripsi {
