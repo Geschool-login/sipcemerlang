@@ -7,7 +7,7 @@ function Hero(props) {
     
     return (
         <div className="col-12 hero-container">
-            <div style={{ backgroundImage: `linear-gradient(176.4deg, rgba(0, 0, 0, 0.5) 85.12%, rgba(255, 255, 255, 0) 133.48%), url(${props.background})` }} className="hero-background col-12"></div>
+            <div style={{ backgroundImage: `linear-gradient(176.4deg, rgba(0, 0, 0, 0.3) 85.12%, rgba(255, 255, 255, 0) 133.48%), url(${props.background})` }} className="hero-background col-12"></div>
             <div className="col-12 hero">
                 <div className="content-container">
                     <div className="col-xs-12 col-sm-7 col-md-6 col-lg-8 left-side text-light" data-page={props.appName}>
