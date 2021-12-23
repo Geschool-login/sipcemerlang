@@ -12,9 +12,10 @@ import logo from '../../assets/img/logo.png'; //Logo
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "Kota Padang Blended Learning"
-    const slogan = "Pendidikan bukanlah sesuatu yang diperoleh seseorang, tapi pendidikan adalah sebuah proses seumur hidup."
-    const copyright = "2021 Kota Padang Blended Learning - Didukung oleh Geschool"
+    const title1 = "SIP Cemerlang"
+    const title2 = ""
+    const slogan = "Pupuklah selalu kepercayaan diri yang ada dalam dirimu. Karena sebenarnya kamu benar-benar mampu dan tidak ada seorangpun yang membatasimu untuk mecari ilmu."
+    const copyright = "2021 SIP Cemerlang Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>
@@ -23,7 +24,8 @@ function pageLayout( props ) {
                 logo={logo}
                 background={background}
                 deskripsi={deskripsi}
-                title={title}
+                title1={title1}
+                title2={title2}
                 slogan={slogan}
                 appName={props.appName}
             >

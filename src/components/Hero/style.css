@@ -35,8 +35,8 @@
 }
 
 .hero .logo img {
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
 }
 
 .hero h5 {
@@ -80,7 +80,6 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    /* letter-spacing: 0.1em; */
 }
 
 .slogan p {
@@ -90,9 +89,40 @@
     line-height: normal;
 }
 
+.data-container {
+    padding: 5vh 25vh;
+    width: 100%;
+    color: #fff;
+}
+
+.mr-3 {
+    margin-right: 15px !important;
+}
+
+.border {
+    border: 1px solid #fff;
+}
+
+.logo-title {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .hero .content-container {
-        padding: 5vh;
+        padding: 5vh 5vh;
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero h5 {
+        font-size: 1.5rem;
+    }
+
+    .slogan p {
+        font-size: 1.3rem;
     }
 
     .hero .content-container .left-side {
@@ -115,21 +145,9 @@
         text-align: justify;
     }
 
-    .slogan p {
-        font-size: 1.2rem;
-        margin-bottom: 0;
-        font-weight: 300;
-        line-height: normal;
+    .data-container {
+        padding: 0 5vh;
     }
-
-    .deskripsi h5 {
-        font-size: 1rem;
-    }
-
-    .title h1 {
-        font-size: calc(1.325rem + .9vw);
-    }
-
 }
 
 @media (max-width: 767px) {
@@ -159,8 +177,37 @@
     }
 
     .deskripsi {
-        width: 100%;
+        width: 70%;
     }
 
+    .data-container {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .logo-title {
+        display: flex;
+        color: #fff;
+        justify-content: center;
+    }
+
+    .logo-title .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-title .deskripsi {
+        margin-left: 10px;
+    }
+
+    .logo-title h2 {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+    }
     
 }
